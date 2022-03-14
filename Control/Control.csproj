@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BED208D6-68B9-42C0-B445-41A4351566E5}</ProjectGuid>
+    <ProjectGuid>{14AF0709-A2A6-47A7-833A-754DBE2C06E8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Form</RootNamespace>
-    <AssemblyName>Form</AssemblyName>
+    <RootNamespace>Control</RootNamespace>
+    <AssemblyName>Control</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibreriaControl\LibreriaControl.csproj">
+      <Project>{7BC7F50E-5AC4-4FA8-9FE3-C1B4C508A1D9}</Project>
+      <Name>LibreriaControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

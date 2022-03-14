@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
 
-namespace WindowsForms.Controles
+namespace LibreriaControl
 {
-    class Class1: CheckBox
+    public class Class1 : CheckBox
     {
+        public static void Main(string[] args)
+        {
+            
+        }
         //Fields
         private Color onBackColor = Color.MediumSlateBlue;
         private Color onToggleColor = Color.WhiteSmoke;

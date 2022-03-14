@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("WindowsForms")]
+[assembly: AssemblyTitle("Control")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WindowsForms")]
+[assembly: AssemblyProduct("Control")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("d454dbd2-1e0e-459d-91c4-4ec9d86c7e4f")]
+[assembly: Guid("14af0709-a2a6-47a7-833a-754dbe2c06e8")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
