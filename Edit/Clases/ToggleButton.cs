@@ -8,13 +8,13 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
 
-namespace LibreriaControl
+namespace Control.Clases
 {
-    public class Class1 : CheckBox
+    class ToggleButton : CheckBox
     {
         public static void Main(string[] args)
         {
-            
+
         }
         //Fields
         private Color onBackColor = Color.MediumSlateBlue;
@@ -115,7 +115,7 @@ namespace LibreriaControl
         }
 
         //Constructor
-        public Class1()
+        public ToggleButton()
         {
             this.MinimumSize = new Size(45, 22);
         }
