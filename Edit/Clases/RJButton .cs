@@ -16,7 +16,7 @@ namespace CustomControls.RJControls
         //Fields
         private int borderSize = 0;
         private int borderRadius = 0;
-        private Color borderColor = Color.PaleVioletRed;
+        private Color borderColor = Color.FromArgb(214, 224, 240);//Border Color
 
         //Properties
         [Category("RJ Code Advance")]
@@ -71,9 +71,10 @@ namespace CustomControls.RJControls
         {
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
-            this.Size = new Size(150, 40);
-            this.BackColor = Color.MediumSlateBlue;
-            this.ForeColor = Color.White;
+            this.Size = new Size(46, 42);
+            //this.Text = string.Empty;
+            this.BackColor = Color.FromArgb(141, 147, 171); //Color de fondo
+            this.ForeColor = Color.FromArgb(241, 243, 248); // de fuente
             this.Resize += new EventHandler(Button_Resize);
         }
 

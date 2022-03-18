@@ -12,15 +12,10 @@ namespace Control.Clases
 {
     class ToggleButton : CheckBox
     {
-        public static void Main(string[] args)
-        {
-
-        }
-        //Fields
-        private Color onBackColor = Color.MediumSlateBlue;
-        private Color onToggleColor = Color.WhiteSmoke;
-        private Color offBackColor = Color.Gray;
-        private Color offToggleColor = Color.Gainsboro;
+        private Color onBackColor = Color.FromArgb(214, 224, 240);
+        private Color onToggleColor = Color.FromArgb(241, 243, 248); 
+        private Color offBackColor = Color.FromArgb(214, 224, 240);
+        private Color offToggleColor = Color.FromArgb(58, 60, 69);
         private bool solidStyle = true;
 
         //Properties
@@ -117,24 +112,31 @@ namespace Control.Clases
         //Constructor
         public ToggleButton()
         {
-            this.MinimumSize = new Size(45, 22);
+            this.MinimumSize = new Size(26, 10);
         }
 
         //Methods
         private GraphicsPath GetFigurePath()
         {
-            int arcSize = this.Height - 1;
-            Rectangle leftArc = new Rectangle(0, 0, arcSize, arcSize);
-            Rectangle rightArc = new Rectangle(this.Width - arcSize - 2, 0, arcSize, arcSize);
+            /*int arcSize = this.Height - 1;
+            Rectangle leftArc = new Rectangle(0, 0, arcSize, arcSize);//izquierda
+            Rectangle rightArc = new Rectangle(this.Width - arcSize - 2, 0, arcSize, arcSize);//derecha
 
             GraphicsPath path = new GraphicsPath();
             path.StartFigure();
             path.AddArc(leftArc, 90, 180);
             path.AddArc(rightArc, 270, 180);
-            path.CloseFigure();
+            path.CloseFigure();*/
 
-            return path;
+            // Create a GraphicsPath object and add a rectangle to it.
+            GraphicsPath myPath = new GraphicsPath();
+            Rectangle pathRect = new Rectangle(0, 0, this.Width, this.Height);
+            myPath.AddRectangle(pathRect);
+
+
+            return myPath;
         }
+
 
         protected override void OnPaint(PaintEventArgs pevent)
         {
@@ -145,11 +147,11 @@ namespace Control.Clases
             if (this.Checked) //ON
             {
                 //Draw the control surface
-                if (solidStyle)
+                if (solidStyle)//si es verdadero
                     pevent.Graphics.FillPath(new SolidBrush(onBackColor), GetFigurePath());
                 else pevent.Graphics.DrawPath(new Pen(onBackColor, 2), GetFigurePath());
                 //Draw the toggle
-                pevent.Graphics.FillEllipse(new SolidBrush(onToggleColor),
+                pevent.Graphics.FillRectangle(new SolidBrush(onToggleColor),
                     new Rectangle(this.Width - this.Height + 1, 2, toggleSize, toggleSize));
             }
             else //OFF
@@ -159,7 +161,7 @@ namespace Control.Clases
                     pevent.Graphics.FillPath(new SolidBrush(offBackColor), GetFigurePath());
                 else pevent.Graphics.DrawPath(new Pen(offBackColor, 2), GetFigurePath());
                 //Draw the toggle
-                pevent.Graphics.FillEllipse(new SolidBrush(offToggleColor),
+                pevent.Graphics.FillRectangle(new SolidBrush(offToggleColor),
                     new Rectangle(2, 2, toggleSize, toggleSize));
             }
         }
