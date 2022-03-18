@@ -29,10 +29,8 @@ namespace Edit
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BackGroundBuscador = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.DoodleText = new System.Windows.Forms.Label();
             this.rjButton19 = new CustomControls.RJControls.RJButton();
             this.rjButton18 = new CustomControls.RJControls.RJButton();
@@ -46,67 +44,57 @@ namespace Edit
             this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.minimizar = new CustomControls.RJControls.RJButton();
             this.rjButton20 = new CustomControls.RJControls.RJButton();
-            this.rjButton15 = new CustomControls.RJControls.RJButton();
+            this.Tab2 = new CustomControls.RJControls.RJButton();
             this.Tab1 = new CustomControls.RJControls.RJButton();
-            this.rjButton12 = new CustomControls.RJControls.RJButton();
+            this.maximizar = new CustomControls.RJControls.RJButton();
             this.rjButton11 = new CustomControls.RJControls.RJButton();
             this.rjButton10 = new CustomControls.RJControls.RJButton();
+            this.rjTextBox3 = new Edit.Clases.RJTextBox();
             this.toggleButton1 = new Control.Clases.ToggleButton();
             this.rjButton21 = new CustomControls.RJControls.RJButton();
             this.toggleButton3 = new Control.Clases.ToggleButton();
             this.rjButton16 = new CustomControls.RJControls.RJButton();
             this.jg = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.rjTextBox1 = new Edit.Clases.RJTextBox();
             this.panel1.SuspendLayout();
             this.BackGroundBuscador.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(267, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(481, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Search or enter address";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(240)))));
+            this.panel1.Controls.Add(this.minimizar);
             this.panel1.Controls.Add(this.rjButton20);
-            this.panel1.Controls.Add(this.rjButton15);
+            this.panel1.Controls.Add(this.Tab2);
             this.panel1.Controls.Add(this.Tab1);
-            this.panel1.Controls.Add(this.rjButton12);
+            this.panel1.Controls.Add(this.maximizar);
             this.panel1.Controls.Add(this.rjButton11);
             this.panel1.Controls.Add(this.rjButton10);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(900, 68);
             this.panel1.TabIndex = 14;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // BackGroundBuscador
             // 
             this.BackGroundBuscador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
+            this.BackGroundBuscador.Controls.Add(this.rjTextBox1);
+            this.BackGroundBuscador.Controls.Add(this.rjTextBox3);
             this.BackGroundBuscador.Controls.Add(this.toggleButton1);
             this.BackGroundBuscador.Controls.Add(this.rjButton21);
             this.BackGroundBuscador.Controls.Add(this.toggleButton3);
             this.BackGroundBuscador.Controls.Add(this.DoodleText);
             this.BackGroundBuscador.Controls.Add(this.rjButton16);
-            this.BackGroundBuscador.Controls.Add(this.textBox2);
             this.BackGroundBuscador.Controls.Add(this.jg);
             this.BackGroundBuscador.Controls.Add(this.rjButton1);
             this.BackGroundBuscador.Location = new System.Drawing.Point(0, 0);
             this.BackGroundBuscador.Name = "BackGroundBuscador";
             this.BackGroundBuscador.Size = new System.Drawing.Size(900, 600);
             this.BackGroundBuscador.TabIndex = 26;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(202, 210);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(420, 20);
-            this.textBox2.TabIndex = 27;
-            this.textBox2.Text = "Search or enter address";
             // 
             // DoodleText
             // 
@@ -265,6 +253,7 @@ namespace Edit
             this.rjButton5.FlatAppearance.BorderSize = 0;
             this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.rjButton5.Image = global::Edit.Properties.Resources.Home;
             this.rjButton5.Location = new System.Drawing.Point(211, 86);
             this.rjButton5.Name = "rjButton5";
             this.rjButton5.Size = new System.Drawing.Size(46, 42);
@@ -282,6 +271,7 @@ namespace Edit
             this.rjButton4.FlatAppearance.BorderSize = 0;
             this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.rjButton4.Image = global::Edit.Properties.Resources.regresar1;
             this.rjButton4.Location = new System.Drawing.Point(39, 86);
             this.rjButton4.Name = "rjButton4";
             this.rjButton4.Size = new System.Drawing.Size(46, 42);
@@ -299,6 +289,7 @@ namespace Edit
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.rjButton3.Image = global::Edit.Properties.Resources.Recargar;
             this.rjButton3.Location = new System.Drawing.Point(155, 86);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(46, 42);
@@ -316,12 +307,32 @@ namespace Edit
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.rjButton2.Image = global::Edit.Properties.Resources.derecho1;
             this.rjButton2.Location = new System.Drawing.Point(97, 86);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(46, 42);
             this.rjButton2.TabIndex = 15;
             this.rjButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             this.rjButton2.UseVisualStyleBackColor = false;
+            // 
+            // minimizar
+            // 
+            this.minimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(147)))), ((int)(((byte)(171)))));
+            this.minimizar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(147)))), ((int)(((byte)(171)))));
+            this.minimizar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(240)))));
+            this.minimizar.BorderRadius = 0;
+            this.minimizar.BorderSize = 0;
+            this.minimizar.FlatAppearance.BorderSize = 0;
+            this.minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.minimizar.Image = global::Edit.Properties.Resources.Minimizar1;
+            this.minimizar.Location = new System.Drawing.Point(799, 15);
+            this.minimizar.Name = "minimizar";
+            this.minimizar.Size = new System.Drawing.Size(42, 39);
+            this.minimizar.TabIndex = 32;
+            this.minimizar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.minimizar.UseVisualStyleBackColor = false;
+            this.minimizar.Click += new System.EventHandler(this.rjButton14_Click);
             // 
             // rjButton20
             // 
@@ -340,22 +351,22 @@ namespace Edit
             this.rjButton20.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             this.rjButton20.UseVisualStyleBackColor = false;
             // 
-            // rjButton15
+            // Tab2
             // 
-            this.rjButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(99)))), ((int)(((byte)(110)))));
-            this.rjButton15.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(99)))), ((int)(((byte)(110)))));
-            this.rjButton15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(240)))));
-            this.rjButton15.BorderRadius = 0;
-            this.rjButton15.BorderSize = 0;
-            this.rjButton15.FlatAppearance.BorderSize = 0;
-            this.rjButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            this.rjButton15.Location = new System.Drawing.Point(221, 34);
-            this.rjButton15.Name = "rjButton15";
-            this.rjButton15.Size = new System.Drawing.Size(147, 34);
-            this.rjButton15.TabIndex = 28;
-            this.rjButton15.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            this.rjButton15.UseVisualStyleBackColor = false;
+            this.Tab2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(99)))), ((int)(((byte)(110)))));
+            this.Tab2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(99)))), ((int)(((byte)(110)))));
+            this.Tab2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(240)))));
+            this.Tab2.BorderRadius = 0;
+            this.Tab2.BorderSize = 0;
+            this.Tab2.FlatAppearance.BorderSize = 0;
+            this.Tab2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Tab2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.Tab2.Location = new System.Drawing.Point(221, 34);
+            this.Tab2.Name = "Tab2";
+            this.Tab2.Size = new System.Drawing.Size(147, 34);
+            this.Tab2.TabIndex = 28;
+            this.Tab2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.Tab2.UseVisualStyleBackColor = false;
             // 
             // Tab1
             // 
@@ -366,30 +377,34 @@ namespace Edit
             this.Tab1.BorderSize = 0;
             this.Tab1.FlatAppearance.BorderSize = 0;
             this.Tab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Tab1.Font = new System.Drawing.Font("Roboto", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tab1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             this.Tab1.Location = new System.Drawing.Point(64, 34);
             this.Tab1.Name = "Tab1";
             this.Tab1.Size = new System.Drawing.Size(147, 34);
             this.Tab1.TabIndex = 27;
+            this.Tab1.Text = "Start Page";
             this.Tab1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             this.Tab1.UseVisualStyleBackColor = false;
             // 
-            // rjButton12
+            // maximizar
             // 
-            this.rjButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(147)))), ((int)(((byte)(171)))));
-            this.rjButton12.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(147)))), ((int)(((byte)(171)))));
-            this.rjButton12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(240)))));
-            this.rjButton12.BorderRadius = 0;
-            this.rjButton12.BorderSize = 0;
-            this.rjButton12.FlatAppearance.BorderSize = 0;
-            this.rjButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            this.rjButton12.Location = new System.Drawing.Point(798, 15);
-            this.rjButton12.Name = "rjButton12";
-            this.rjButton12.Size = new System.Drawing.Size(42, 39);
-            this.rjButton12.TabIndex = 25;
-            this.rjButton12.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            this.rjButton12.UseVisualStyleBackColor = false;
+            this.maximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(147)))), ((int)(((byte)(171)))));
+            this.maximizar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(147)))), ((int)(((byte)(171)))));
+            this.maximizar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(240)))));
+            this.maximizar.BorderRadius = 0;
+            this.maximizar.BorderSize = 0;
+            this.maximizar.FlatAppearance.BorderSize = 0;
+            this.maximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maximizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.maximizar.Image = global::Edit.Properties.Resources.Botones31;
+            this.maximizar.Location = new System.Drawing.Point(798, 15);
+            this.maximizar.Name = "maximizar";
+            this.maximizar.Size = new System.Drawing.Size(42, 39);
+            this.maximizar.TabIndex = 25;
+            this.maximizar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.maximizar.UseVisualStyleBackColor = false;
+            this.maximizar.Click += new System.EventHandler(this.rjButton12_Click);
             // 
             // rjButton11
             // 
@@ -401,12 +416,14 @@ namespace Edit
             this.rjButton11.FlatAppearance.BorderSize = 0;
             this.rjButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.rjButton11.Image = global::Edit.Properties.Resources.Botones;
             this.rjButton11.Location = new System.Drawing.Point(751, 15);
             this.rjButton11.Name = "rjButton11";
             this.rjButton11.Size = new System.Drawing.Size(42, 39);
             this.rjButton11.TabIndex = 24;
             this.rjButton11.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             this.rjButton11.UseVisualStyleBackColor = false;
+            this.rjButton11.Click += new System.EventHandler(this.rjButton11_Click);
             // 
             // rjButton10
             // 
@@ -418,12 +435,32 @@ namespace Edit
             this.rjButton10.FlatAppearance.BorderSize = 0;
             this.rjButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.rjButton10.Image = global::Edit.Properties.Resources.x;
             this.rjButton10.Location = new System.Drawing.Point(844, 15);
             this.rjButton10.Name = "rjButton10";
             this.rjButton10.Size = new System.Drawing.Size(42, 39);
             this.rjButton10.TabIndex = 23;
             this.rjButton10.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             this.rjButton10.UseVisualStyleBackColor = false;
+            this.rjButton10.Click += new System.EventHandler(this.rjButton10_Click);
+            // 
+            // rjTextBox3
+            // 
+            this.rjTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(147)))), ((int)(((byte)(171)))));
+            this.rjTextBox3.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.rjTextBox3.BorderSize = 2;
+            this.rjTextBox3.Font = new System.Drawing.Font("Roboto", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(240)))));
+            this.rjTextBox3.Location = new System.Drawing.Point(268, 86);
+            this.rjTextBox3.Margin = new System.Windows.Forms.Padding(8);
+            this.rjTextBox3.Multiline = false;
+            this.rjTextBox3.Name = "rjTextBox3";
+            this.rjTextBox3.PasswordChar = false;
+            this.rjTextBox3.Size = new System.Drawing.Size(481, 38);
+            this.rjTextBox3.TabIndex = 34;
+            this.rjTextBox3.Texts = "Search or enter address";
+            this.rjTextBox3.UnderlinedStyle = false;
             // 
             // toggleButton1
             // 
@@ -481,6 +518,7 @@ namespace Edit
             this.rjButton16.FlatAppearance.BorderSize = 0;
             this.rjButton16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.rjButton16.Image = global::Edit.Properties.Resources.Buscar;
             this.rjButton16.Location = new System.Drawing.Point(647, 210);
             this.rjButton16.Name = "rjButton16";
             this.rjButton16.Size = new System.Drawing.Size(61, 57);
@@ -522,6 +560,24 @@ namespace Edit
             this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             this.rjButton1.UseVisualStyleBackColor = false;
             // 
+            // rjTextBox1
+            // 
+            this.rjTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(147)))), ((int)(((byte)(171)))));
+            this.rjTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.rjTextBox1.BorderSize = 2;
+            this.rjTextBox1.Font = new System.Drawing.Font("Roboto", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(224)))), ((int)(((byte)(240)))));
+            this.rjTextBox1.Location = new System.Drawing.Point(187, 210);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(8);
+            this.rjTextBox1.Multiline = false;
+            this.rjTextBox1.Name = "rjTextBox1";
+            this.rjTextBox1.PasswordChar = false;
+            this.rjTextBox1.Size = new System.Drawing.Size(449, 38);
+            this.rjTextBox1.TabIndex = 35;
+            this.rjTextBox1.Texts = "Search or enter address";
+            this.rjTextBox1.UnderlinedStyle = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,7 +597,6 @@ namespace Edit
             this.Controls.Add(this.rjButton3);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BackGroundBuscador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -550,12 +605,10 @@ namespace Edit
             this.BackGroundBuscador.ResumeLayout(false);
             this.BackGroundBuscador.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
         private CustomControls.RJControls.RJButton jg;
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.Panel panel1;
@@ -563,7 +616,7 @@ namespace Edit
         private CustomControls.RJControls.RJButton rjButton3;
         private CustomControls.RJControls.RJButton rjButton4;
         private CustomControls.RJControls.RJButton rjButton5;
-        private CustomControls.RJControls.RJButton rjButton12;
+        private CustomControls.RJControls.RJButton maximizar;
         private CustomControls.RJControls.RJButton rjButton11;
         private CustomControls.RJControls.RJButton rjButton10;
         private CustomControls.RJControls.RJButton rjButton6;
@@ -573,17 +626,19 @@ namespace Edit
         private CustomControls.RJControls.RJButton rjButton13;
         private System.Windows.Forms.Panel BackGroundBuscador;
         private CustomControls.RJControls.RJButton rjButton20;
-        private CustomControls.RJControls.RJButton rjButton15;
+        private CustomControls.RJControls.RJButton Tab2;
         private CustomControls.RJControls.RJButton Tab1;
         private System.Windows.Forms.Label DoodleText;
         private CustomControls.RJControls.RJButton rjButton16;
-        private System.Windows.Forms.TextBox textBox2;
         private CustomControls.RJControls.RJButton rjButton17;
         private CustomControls.RJControls.RJButton rjButton18;
         private CustomControls.RJControls.RJButton rjButton19;
         private Control.Clases.ToggleButton toggleButton1;
         private CustomControls.RJControls.RJButton rjButton21;
         private Control.Clases.ToggleButton toggleButton3;
+        private CustomControls.RJControls.RJButton minimizar;
+        private Clases.RJTextBox rjTextBox3;
+        private Clases.RJTextBox rjTextBox1;
     }
 }
 
