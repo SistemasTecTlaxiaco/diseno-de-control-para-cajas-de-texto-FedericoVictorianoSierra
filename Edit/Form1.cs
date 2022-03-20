@@ -26,6 +26,7 @@ namespace Edit
                 Tab1.BackColor = Color.FromArgb(241, 243, 248);
                 Tab2.BackColor = Color.FromArgb(235, 238, 246);
                 DoodleText.ForeColor = Color.FromArgb(57, 59, 68);
+                Tab1.ForeColor = Color.FromArgb(58, 60, 69);
 
             }
             else //Tema Negro
@@ -34,6 +35,7 @@ namespace Edit
                 Tab1.BackColor = Color.FromArgb(58, 60, 69);
                 Tab2.BackColor = Color.FromArgb(95, 99, 110);
                 DoodleText.ForeColor = Color.FromArgb(241, 243, 248);
+                Tab1.ForeColor = Color.FromArgb(214, 224, 240);
             }
         }
 
@@ -52,7 +54,6 @@ namespace Edit
             this.WindowState = FormWindowState.Normal;
             maximizar.Visible = false;
             minimizar.Visible = true;
-            
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

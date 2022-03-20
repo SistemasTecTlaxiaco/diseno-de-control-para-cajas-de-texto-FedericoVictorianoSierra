@@ -36,10 +36,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Edit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>obj\Debug\Edit.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -143,6 +139,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Minimizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marcador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recargar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

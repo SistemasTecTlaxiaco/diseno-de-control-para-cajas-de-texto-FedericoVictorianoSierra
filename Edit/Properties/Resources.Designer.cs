@@ -63,6 +63,16 @@ namespace Edit.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ajustes {
+            get {
+                object obj = ResourceManager.GetObject("Ajustes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Botones {
             get {
                 object obj = ResourceManager.GetObject("Botones", resourceCulture);
@@ -143,6 +153,46 @@ namespace Edit.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Marcador {
+            get {
+                object obj = ResourceManager.GetObject("Marcador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mas {
+            get {
+                object obj = ResourceManager.GetObject("mas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mas1 {
+            get {
+                object obj = ResourceManager.GetObject("mas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mas2 {
+            get {
+                object obj = ResourceManager.GetObject("mas2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Minimizar {
             get {
                 object obj = ResourceManager.GetObject("Minimizar", resourceCulture);
@@ -166,6 +216,16 @@ namespace Edit.Properties {
         internal static System.Drawing.Bitmap Recargar {
             get {
                 object obj = ResourceManager.GetObject("Recargar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recargar1 {
+            get {
+                object obj = ResourceManager.GetObject("Recargar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

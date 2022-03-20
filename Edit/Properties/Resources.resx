@@ -124,8 +124,11 @@
   <data name="Botones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Botones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Botones1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Botones1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Minimizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ajustes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ajustes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,11 +136,20 @@
   <data name="Minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Botones1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Botones1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="derecho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\derecho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recargar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Recargar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Recargar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Recargar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,19 +157,25 @@
   <data name="Botones31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Botones31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="regresar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\regresar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Botones3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Botones3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marcador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marcador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Botones3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Botones3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="regresar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regresar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="derecho1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\derecho1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minimizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
