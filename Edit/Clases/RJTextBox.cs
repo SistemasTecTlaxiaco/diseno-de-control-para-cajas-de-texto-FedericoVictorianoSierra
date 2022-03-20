@@ -211,7 +211,5 @@ namespace Edit.Clases
             this.Invalidate();
         }
 
-        ///::::+
-
     }
 }
